@@ -3,7 +3,7 @@ body{
 	font-family: Segoe UI;
 	font-size: 15px;
 	color: #878787;
-	background-color: #121212;
+	background-color: #fff;
 }
 
 header{
@@ -86,7 +86,7 @@ header{
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: #3b5e94;
   color: white;
   padding: 16px 20px;
   border: none;
