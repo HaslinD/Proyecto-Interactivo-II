@@ -1,0 +1,87 @@
+#contenedor{
+    display: flex;
+    flex-direction: row;
+}
+#columnaizquierda{
+    height: 100vh;
+    width: 20vw;
+    background-color: #FFFF;
+}
+#columnaderecha{
+    height: 100vh;
+    width: 20vw;
+    background-color: #FFFF;
+}
+#columnacentral{
+    height: 100vh;
+    width: 60vw;
+    background-color: #DFDFDF;
+    flex-direction: column;
+}
+#espacioseguro{
+    width: 100vw;
+    height: 10vh;
+    background-color: #DFDFDF;
+}
+.publicacion{
+    width: 60vw;
+    min-height: 40vh;
+    background-color: indianred;
+    margin-bottom: 3px;
+}
+#menuizquierda{
+    width: 100vw;
+    height: 75vh;
+    /*background-color: mediumpurple;*/
+    margin-top: 50px;
+}
+#menuderecha{
+    width: 100vw;
+    height: 75vh;
+    /*background-color: mediumpurple;*/
+    margin-top: 50px;
+}
+.cont-publicacion{
+    width: 30vw;
+    height: 40vh;
+    background-color: darkred;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+/*Michelle*/
+.imgPerfil{
+    height: 170px;
+    width: 175px;
+    border-radius: 100%;
+}
+#menuizqopciones{
+    color: white;
+}
+.botonizq{
+    background-color: #3B5F93;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.fa-plus{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px;
+}
+.imgSugerencia{
+    border-radius: 100%;
+    height: 44px;
+}
+#mdspersonas .botonder{
+    background-color: #3B5F93;
+    border-radius: 5px;
+    padding: 4px 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+}
