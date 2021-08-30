@@ -1,3 +1,6 @@
+:root{
+	--color-azul: #3370e7;
+}
 
 body{
 	font-family: Segoe UI;
@@ -25,8 +28,14 @@ header{
 }
 
 .btn-dark:hover{
-	background: #3A47F4;
+	background: var(--color-azul);
 	transition: all 0.6s ease-in-out;
+}
+
+h6{
+  background-color: rgba(255, 0, 0, 0.459);
+  padding: 5%;
+  color: #fff;
 }
 
 
@@ -105,6 +114,81 @@ header{
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+/*-----------------------Post------------------------*/
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.card img{
+  border-radius: 100%;
+}
+
+.btn-hastag{
+  
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 
 /*-----------------------LOGIN----------------------------*/
 a {
