@@ -126,6 +126,32 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+.BotonGuardar{
+    background-color: #3B5F93;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17.62px;
+    line-height: 3vh;
+    box-shadow: 0 3.5px 9px rgb(0 0 0 / 0.6);
+    color: white;
+    margin-top: 50px;
+    padding: 4px 23px;
+
+}
+
+.BotonCancelar{
+    background-color: #3B5F93;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17.62px;
+    line-height: 3vh;
+    box-shadow: 0 3.5px 9px rgb(0 0 0 / 0.6);
+    color: white;
+    margin-right: 35px;
+    margin-left: 400px;
+    padding: 4px 23px;
+}
+
 /*                   ---------------------------           */
 .profile-pic {
     color: transparent;
