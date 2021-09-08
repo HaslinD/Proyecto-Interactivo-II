@@ -134,6 +134,9 @@
     image-rendering: auto;
     text-align: center;
     height: 53vh;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-image: url("../images/Haslin.png");
 }
 .iconos{
     font-size: 30px;
