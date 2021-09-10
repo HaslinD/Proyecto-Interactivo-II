@@ -55,7 +55,7 @@
 }
 
 #headerEdit{
-    background-color: #386095;
+    background-color: gray;
     border-radius: 20px 20px 0px 0px;
     height: 60px;
     font-size: 50px;
@@ -65,7 +65,7 @@
     align-items: center;
 }
 #editarImagenes{
-    padding-top: 50px;
+    padding-top: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -134,7 +134,7 @@ input[type=text], select {
     line-height: 3vh;
     box-shadow: 0 3.5px 9px rgb(0 0 0 / 0.6);
     color: white;
-    margin-top: 50px;
+    margin-top: 25px;
     padding: 4px 23px;
 
 }
@@ -150,6 +150,33 @@ input[type=text], select {
     margin-right: 35px;
     margin-left: 400px;
     padding: 4px 23px;
+
+}
+
+.UserTags{
+  /*  position: fixed; left: 400px; top: 750px; */
+    position: center;
+    font-family: Nunito;
+}
+.UserTags2{
+   /* position: fixed; left: 550px; top: 750px; */
+    font-family: Nunito;
+}
+input[type='checkbox']{
+    width: 15px;
+    height: 15px;
+}
+
+.column{
+  float: left;
+    width: 25%;
+
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /*                   ---------------------------           */
