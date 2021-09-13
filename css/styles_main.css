@@ -53,7 +53,7 @@
 }
 .cont-publicacion{
     width: 42vw;
-    height: 74vh;
+    height: 71.5vh;
     background-color: white;
     flex-direction: column;
     margin-left: auto;
@@ -72,6 +72,7 @@
     margin-top: -5vh;
     margin-right: -1.6vw;
     border-radius: 100%;
+    object-fit: contain;
 }
 #menuizqopciones{
     color: white;
@@ -149,6 +150,10 @@
     background-repeat: no-repeat;
     background-size:100% 100%;
     background-image: url("../images/Haslin.png");
+    background-size: cover;
+}
+.flex-container {
+    display: flex;
 }
 .iconos{
     font-size: 30px;
@@ -208,8 +213,9 @@
     font-size: 16px;
 }
 .infousuario{
-    padding: 12px 10px 8px 25px;
+    padding: 12px 10px 10px 25px;
 }
+
 .fa-search{
     position: absolute;
     font-size: 22px;
@@ -217,20 +223,17 @@
     margin-left: 6px;
 }
 .fa-comment-dots{
-    margin-right: 30px;
-    display: inline-block;
-    float: left;
+    margin-top: 7px;
 }
 .fa-heart{
-    display: inline-block;
-    float: left;
 }
 .iconos h1{
     font-size: 17.48px;
     font-weight: lighter;
     text-align: left;
-    width: 9vw;
-    float: right;
+    margin-top: 10px;
+    margin-left: -15px;
+    margin-right: 20px;
 }
 .fa-flag{
     float: right;
@@ -539,6 +542,30 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
-#perfilposts .publicacion{
-
+#perfilposts{
+    display: flex;
+}
+#perfilposts .cont-publicacion{
+    width: 22vw;
+    height: 40vh;
+}
+#perfilposts .left{
+    margin-left: 3.5vw;
+    margin-right: 2vw;
+}
+#perfilposts .right{
+    margin-left: 2vw;
+    margin-right: 3.5vw;
+}
+#perfilposts .contenido{
+    height: 27vh;
+    background-size: fill;
+    margin-top: 3vh;
+}
+#perfilposts .imgSugerencia{
+ height: 5vh;
+ width: 5vh;
+}
+#perfilposts .publicacion p{
+    font-size: 18px;
 }
