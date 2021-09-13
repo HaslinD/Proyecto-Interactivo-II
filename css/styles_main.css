@@ -154,6 +154,7 @@
     font-size: 30px;
     color: #B7B7B8;
     padding: 0px 25px;
+    text-align: left;
 }
 .emotes{
     position: relative;
@@ -217,15 +218,19 @@
 }
 .fa-comment-dots{
     margin-right: 30px;
-     display: inline-block;
+    display: inline-block;
+    float: left;
 }
 .fa-heart{
-     display: inline-block;
+    display: inline-block;
+    float: left;
 }
 .iconos h1{
     font-size: 17.48px;
     font-weight: lighter;
     text-align: left;
+    width: 9vw;
+    float: right;
 }
 .fa-flag{
     float: right;
@@ -452,10 +457,6 @@ h2{
     border-radius: 30px;
     /*width: 50vw;*/
     height: 60vh;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 .perfilbanner{
     width: 50vw;
@@ -503,6 +504,7 @@ h2{
     padding-left: 8px;
 }
 .perfilpublicaciones{
+    color: #707070;
     margin-top: 10px;
     width: 8vw;
     font-family: "Arial";
@@ -511,6 +513,7 @@ h2{
     padding: 2px;
 }
 .perfilseguidores{
+    color: #707070;
     margin-top: 10px;
     width: 8vw;
     font-family: "Arial";
@@ -519,6 +522,7 @@ h2{
     padding: 2px;
 }
 .perfilseguidos{
+    color: #707070;
     margin-top: 10px;
     width: 8vw;
     font-family: "Arial";
@@ -527,9 +531,14 @@ h2{
     padding: 2px;
 }
 .perfilbio{
-    margin-top: 9px;
-    width: 30vw;
+    color: #707070;
+    width: 35vw;
     display: block;
     text-align: left;
     line-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#perfilposts .publicacion{
+
 }
