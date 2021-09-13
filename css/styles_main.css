@@ -5,12 +5,12 @@
 }
 #columnaizquierda{
     height: 100vh;
-    width: 25vw;
+    width: 21vw;
     background-color: #FFFF;
 }
 #columnaderecha{
     height: 100vh;
-    width: 20vw;
+    width: 24vw;
     background-color: #FFFF;
     text-align: center;
 }
@@ -24,8 +24,13 @@
 }
 #espacioseguro{
     /*width: 100vw;*/
-    height: 10vh;
+    height: 6vh;
     background-color: #DFDFDF;
+    font-family: Segoe UI;
+    font-size: 20px;
+    color: #707070;
+    text-align: right;
+    padding: 10px 93px 0px 10px;
 }
 .publicacion{
     /*width: 60vw;*/
@@ -64,7 +69,7 @@
 .imgUsuario{
     height:80px;
     width: 80px;
-    margin-top: -4vh;
+    margin-top: -5vh;
     margin-right: -1.6vw;
     border-radius: 100%;
 }
@@ -77,7 +82,7 @@
     padding: 10px 15px;
     font-weight: bold;
     font-size: 17.62px;
-    line-height: 8vh;
+    line-height: 6.8vh;
     box-shadow: 0 3.5px 9px rgb(0 0 0 / 0.6);
 }
 .botonizq:hover{
@@ -95,7 +100,7 @@
     border-radius: 100%;
     width: 3vw;
 }
-#mdspersonas .botonder{
+#menudersugerencias .botonder{
     background-color: #3B5F93;
     border-radius: 5px;
     padding: 4px 23px;
@@ -103,6 +108,8 @@
     font-weight: bold;
     font-size: 14.6px;
     box-shadow: 0 3.5px 9px rgb(0 0 0 / 0.6);
+    float: right;
+    margin-right: 35px;
 }
 .logoMain{
     height: 50px;
@@ -110,7 +117,7 @@
 }
 
 .fa-pen{
-    margin-top: 16vh;
+    margin-top: 10vh;
     border-radius: 100%;
     color: white;
     background-color: #707070;
@@ -123,7 +130,7 @@
     font-weight: bold;
     color: #707070;
     margin-top: 20px;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
 }
 #menudersugerencias h6{
     font-size: 20px !important; 
@@ -177,7 +184,7 @@
 }
 #columnacentral h6{
     font-family: Segoe UI;
-    font-size: 31.35px;
+    font-size: 29px;
     color: #707070;
     font-weight: 350;
     padding-left: 60px;
@@ -190,10 +197,10 @@
     padding: 0px 25px;
 }
 #menuderbusqueda input{
-    border-radius: 12px;
+    border-radius: 18px;
     border-style: solid;
     border-width: thin;
-    padding: 8px 8px 8px 35px;
+    padding: 8px 60px 8px 35px;
     color: #707070;
     font-weight: normal;
     font-size: 16px;
@@ -203,18 +210,36 @@
 }
 .fa-search{
     position: absolute;
-    font-size: 25px;
-    margin-top: 8px;
+    font-size: 22px;
+    margin-top: 10px;
     margin-left: 6px;
 }
 .fa-comment-dots{
     margin-right: 30px;
-    float: inherit;
+     display: inline-block;
+}
+.fa-heart{
+     display: inline-block;
 }
 .iconos h1{
     font-size: 17.48px;
     font-weight: lighter;
+    text-align: left;
 }
+.fa-flag{
+    float: right;
+    margin-top: -35px;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #9A9A9A;
+}
+.mdstags, .mdspersonas{
+    text-align: left;
+    margin-left: 20px;
+    line-height: 6vh;
+}
+
+
 
 /*scrollbar*/
 
@@ -416,3 +441,97 @@ h2{
     border-color: #717171;
 }
  /*---------------FIN STYLE POP UP NUEVA PUBLICACION--------------*/
+
+ /*--Perfil--*/
+ .perfilmain{
+    min-height: 60vh;
+    margin-bottom: 3px;
+}
+.cont-perfil{
+    border-radius: 30px;
+    width: 50vw;
+    height: 60vh;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.perfilbanner{
+    width: 50vw;
+    height: 16vh;
+    flex-direction: column;
+    margin-top: -32px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#profban{
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.perfildetalles{
+    margin-top: 8px;
+    width: 40vw;
+    height: 15vh;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.perfilfoto{
+    width: 10vh;
+    height: 10vh;
+    float: left;
+}
+#profpic{
+    width: 95%;
+    height: 95%;
+    border-radius: 100px;
+    object-fit: cover;
+    margin: auto auto auto auto;
+    display: block;
+}
+.perfilnombre{
+    width: 8vw;
+    height: 15vh;
+    float: left;
+    font-family: "Arial";
+    font-size: 20px;
+    padding-left: 8px;
+}
+.perfilpublicaciones{
+    width: 8vw;
+    height: 15vh;
+    font-family: "Arial";
+    float: left;
+    font-size: 18px;
+    padding: 2px;
+}
+.perfilseguidores{
+    width: 8vw;
+    height: 15vh;
+    font-family: "Arial";
+    float: left;
+    font-size: 18px;
+    padding: 2px;
+}
+.perfilseguidos{
+    width: 8vw;
+    height: 15vh;
+    font-family: "Arial";
+    float: left;
+    font-size: 18px;
+    padding: 2px;
+}
+.perfilbio{
+    margin-top: 8px;
+    width: 30vw;
+    height: 15vh;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="css/styles-perfil.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_main.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Title</title>
 </head>
 <body>
     <div id="contenedor">
-        <div id="columnaizquierda">
+         <div id="columnaizquierda">
             <div id="menuizquierda">
-                MENU IZQUIERDA
                 <div id="menuizquni">
-
+                    <img src="images/Logo_UNITEC.png" class="logoMain">
                 </div>
                 <div id="menuizqperfil">
-
+                    <img src="images/baba.jpg" class="imgUsuario"> <i class="fas fa-pen"></i><br>
+                    <h1 class="nombre">Linda Donaire</h1>
                 </div>
                 <div id="menuizqopciones">
-
+                    <a class="botonizq">VER PERFIL</a><br>
+                    <a class="botonizq" id="publicacionBTN"><i class="fas fa-plus"></i>NUEVA PUBLICACIÓN</a>
                 </div>
             </div>
         </div>
         <div id="columnacentral">
             <div id="espacioseguro">
-                ESPACIO SEGURO
+
             </div>
             <div class="perfilmain">
                 <div class="cont-perfil">
@@ -64,16 +65,29 @@
             </div>
         </div>
         <div id="columnaderecha">
-            <div id="menuderecha">
-                MENU DERECHA
+           <div id="menuderecha">
+                
                 <div id="menuderbusqueda">
-
+                    <i class="fas fa-search"></i><input id="taskInput" type="text" placeholder="Buscar...">
                 </div>
                 <div id="menudersugerencias">
                     <div id="mdspersonas">
+                        <h6>SUGERENCIAS PARA TI</h6>
+                        <dl class="mdspersonas">
+                            <dt>
+                                <img src="images/baba.jpg" class="imgSugerencia" alt="sugerencia"> Naima Roig <a class="botonder">SEGUIR</a>
+                            </dt>
+                        </dl>
 
                     </div>
                     <div id="mdstags">
+                        <h6>EXPLORAR TAGS</h6>
+                        <dl class="mdstags">
+                            <dt> #Modelado3D <a class="botonder">SEGUIR</a></dt>
+                            <dt>#Dibujo <a class="botonder">SEGUIR</a></dt>
+                            <dt>#Animacion2D <a class="botonder">SEGUIR</a></dt>
+                            <dt>#Ilustracion <a class="botonder">SEGUIR</a></dt>
+                        </dl>
 
                     </div>
                 </div>
