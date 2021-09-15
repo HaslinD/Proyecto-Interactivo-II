@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
     <title>AnimationStudents</title>
 </head>
 <body>
@@ -23,6 +24,17 @@
                 <div id="menuizqopciones">
                     <a class="botonizq">VER PERFIL</a><br>
                     <a class="botonizq" id="publicacionBTN"><i class="fas fa-plus"></i>NUEVA PUBLICACIÓN</a>
+                </div>
+            </div>
+
+            <a href="#" onclick="botonSalir()"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+
+        <div id="ventanaSalir" class="modal" style="display: none;">
+            <div class="contenidoSalir">
+                <h4>¿Estás seguro que quieres cerrar sesión?</h4>
+                <div class="opcionesSalir">
+                    <a href="index.html" class="botonSi">SI</a><a onclick="botonSalir()" href="#" class="botonNo">NO</a>
                 </div>
             </div>
         </div>
@@ -64,30 +76,67 @@
             <div id="espacioseguro">
                 <a class="todos">Todos</a> <a class="siguiendo">Siguiendo</a>
             </div>
-            <div class="publicacion">
-                <div class="cont-publicacion">
-                    <div class="infousuario">
-                        <img src="images/baba.jpg" class="imgSugerencia"><h6>Sebastián Avila</h6><i class="fas fa-flag"></i>
-                    </div>
-                    <div class="contenido">
+
+                <span class="tabMenu">
+                    <span class="todosTab">
                         
-                    </div>
-                    <p>Contenido de comentario del publicador.</p>
-                    <div class="flex-container iconos">
-                        <i class="fas fa-comment-dots icono"></i>
-                        <h1 class="texto-icono">522</h1>
-                      <div class="emotes">
-                            <i class="fas fa-heart"></i>
-                            <span class="emotesrow">&#129315; &#128558; &#128546;</span>
+                        <div class="publicacion">
+                            <div class="cont-publicacion">
+                                <div class="infousuario">
+                                    <img src="images/baba.jpg" class="imgSugerencia"><h6>Sebastián Avila</h6><i class="fas fa-flag"></i>
+                                </div>
+                                <div class="contenido">
+                                    
+                                </div>
+                                <p>Contenido de comentario del publicador.</p>
+                                <div class="flex-container iconos">
+                                    <i class="fas fa-comment-dots icono"></i>
+                                    <h1 class="texto-icono">522</h1>
+                                  <div class="emotes">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="emotesrow">&#129315; &#128558; &#128546;</span>
+                                    </div>
+                                    <h1 class="texto-icono">5k</h1>
+                                    <div class="col-md-8 col-sm-6"></div>
+                                    <div class="program">
+                                        <i class="fab fa-adobe"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h1 class="texto-icono">5k</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="publicacion">
-                <div class="cont-publicacion">
-                </div>
-            </div>
+
+                    </span>
+
+                    <span class="siguiendoTab">
+                        
+                        <div class="publicacion">
+                            <div class="cont-publicacion">
+                                <div class="infousuario">
+                                    <img src="images/baba.jpg" class="imgSugerencia"><h6>Sebastián Avila</h6><i class="fas fa-flag"></i>
+                                </div>
+                                <div class="contenido">
+                                    
+                                </div>
+                                <p>Contenido de comentario del publicador.</p>
+                                <div class="flex-container iconos">
+                                    <i class="fas fa-comment-dots icono"></i>
+                                    <h1 class="texto-icono">522</h1>
+                                  <div class="emotes">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="emotesrow">&#129315; &#128558; &#128546;</span>
+                                    </div>
+                                    <h1 class="texto-icono">5k</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                    </span>
+
+                </span>
+
+            
+            
+
         </div>
         <div id="columnaderecha">
             <div id="menuderecha">
@@ -122,9 +171,21 @@
 
 
 
-     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+    function botonSalir() {
+      var x = document.getElementById("ventanaSalir");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+
 </body>
 </html>

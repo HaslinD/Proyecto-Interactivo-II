@@ -36,6 +36,7 @@
     /*width: 60vw;*/
     min-height: 40vh;
     margin-bottom: 50px;
+    content: contain;
 }
 #menuizquierda{
     /*width: 100vw;*/
@@ -53,7 +54,7 @@
 }
 .cont-publicacion{
     width: 42vw;
-    height: 71.5vh;
+    /*height: 71.5vh;*/
     background-color: white;
     flex-direction: column;
     margin-left: auto;
@@ -63,7 +64,7 @@
     border-style: solid;
     border-color: #707070;
     border-width: 1px;
-
+    padding: 10px 0px;
 }
 /*-----------MAIN PAGE------------*/
 .imgUsuario{
@@ -100,7 +101,7 @@
 }
 .imgSugerencia{
     border-radius: 100%;
-    width: 3vw;
+    width: 40px;
 }
 #menudersugerencias .botonder{
     background-color: #3B5F93;
@@ -163,7 +164,9 @@
     font-size: 30px;
     color: #B7B7B8;
     padding: 0px 25px;
-    text-align: left;
+    border-top-width: thin;
+    border-top-color: #B7B7B8;
+    border-top-style: solid;
 }
 .emotes{
     position: relative;
@@ -202,7 +205,7 @@
     margin-top: 4px;
 }
 .publicacion p{
-    font-size: 22px;
+    font-size: 19px;
     font-family: Segoe UI;
     font-weight: lighter;
     padding: 6px 18px 0px 18px;
@@ -211,19 +214,19 @@
     border-radius: 18px;
     border-style: solid;
     border-width: thin;
-    padding: 8px 60px 8px 35px;
+    padding: 5px 10px 5px 35px;
     color: #707070;
     font-weight: normal;
     font-size: 16px;
 }
 .infousuario{
-    padding: 12px 10px 10px 25px;
+    padding: 0px 10px 10px 25px;
 }
 
 .fa-search{
     position: absolute;
     font-size: 22px;
-    margin-top: 15px;
+    margin-top: 16px;
     margin-left: 6px;
 }
 .fa-comment-dots{
@@ -232,10 +235,10 @@
 .fa-heart{
 }
 .iconos h1{
-    font-size: 17.48px;
+    font-size: 12px;
     font-weight: lighter;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: -15px;
     margin-right: 20px;
 }
@@ -251,6 +254,16 @@
     margin-left: 20px;
     line-height: 5.5vh;
 }
+.fa-sign-out-alt{
+    color: #707070;
+    font-size: 28px;
+    margin-top: 12vh;
+    margin-left: 40px;
+}
+
+.program{
+    float: right;
+}
 
 
 
@@ -258,12 +271,12 @@
 
  /* width */
  ::-webkit-scrollbar {
-    width: 18px;
+    width: 17px;
 }
   
 /* Track */
 ::-webkit-scrollbar-track {
-
+    width: 34px;
 }
   
 /* Handle */
@@ -282,7 +295,67 @@
 /*Notas
  &#128151; codigo para el emote de corazon*/
 
+#ventanaSalir{
+    display: none;
+    justify-content: center;
+}
+.contenidoSalir{
+    background-color: white;
+    height: 25vh;
+    width: 40vw;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #707070;
+    border-width: thin;
+    margin-top: 100px;
+}
+.contenidoSalir h4{
+    padding: 70px 10px;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 25px;
+    color: #707070;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #707070;
+}
+.opcionesSalir{
+    margin-top: 21.6px;
+}
+.botonSi{
+    padding: 22.2px 130px;
+    background-color: #3B5E94;
+    font-size: 18px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    color: white;
+    border-bottom-left-radius: 18px;
+    border-bottom-width: thin;
+    border-bottom-color: #707070;
+}
+.botonNo{
+    padding: 22.2px 130px;    
+    font-size: 18px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    color: #707070;
+}
+.botonSi:hover{
+    color: white;
+    font-style: normal;
+}
+.botonNo:hover{
+    color: #707070;
+    font-style: normal;
+}
 
+.todos{
+    font-weight: bold;
+    margin-right: 30px;
+}
+.siguiendo{
+    font-weight: normal;
+}
 
 
  /*---------------STYLE POP UP NUEVA PUBLICACION--------------*/
