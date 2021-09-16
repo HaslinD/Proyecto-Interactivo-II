@@ -50,3 +50,38 @@ window.onclick = function(event) {
   }
 }
 /*-------------FIN NUEVA PUBLICACION POP UP------------*/
+
+
+
+
+/*------POPUP CERRAR SESION-------*/
+    function botonSalir() {
+      var x = document.getElementById("ventanaSalir");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+/*------POPUP CERRAR SESION-------*/
+
+
+
+
+/*-----------POPUP POST----------*/
+function abrirModal(event){
+    console.log(event);
+    modal =  event.target.querySelector(".contenedor-post-fondo");
+    modal.classList.toggle("contenedor-desactivado");
+}
+
+function cerrarModal(event){
+    event.stopPropagation();
+    event.target.classList.toggle("contenedor-desactivado");
+}
+
+function prevenirModal(event){
+    event.stopPropagation();
+}
+/*-----------POPUP POST----------*/
