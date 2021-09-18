@@ -161,7 +161,12 @@
     font-family: Segoe UI;
     font-size: 18px;
 }
+
 .contenido{
+    contain: content;
+}
+
+.contenidoImg{
     image-rendering: auto;
     text-align: center;
     height: 53vh;
