@@ -126,7 +126,6 @@
     font-size: 16px;
     box-shadow: 0 3.5px 9px rgb(0 0 0 / 0.6);
     float: right;
-    margin-right: 35px;
     line-height: 28px;
     margin-top: 1.3vh;
 }
@@ -170,10 +169,8 @@
     image-rendering: auto;
     text-align: center;
     height: 53vh;
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    background-image: url("../images/Haslin.png");
-    background-size: cover;
+    width: 42vw;
+    align-content: center;
 }
 .flex-container {
     display: flex;
@@ -196,18 +193,29 @@
 .emotes .emotesrow {
   visibility: hidden;
   width: 150px;
-  background-color: black;
-  color: #fff;
+  background-color: white;
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+  border-radius: 20px;
+  border-color: #707070;
+  border-style: solid;
+  border-width: thin;
+  padding: 2px 0;
   bottom: 100%;
   left: 50%;
   margin-left: -76.7px;
+  font-size: 20px;
 
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
+}
+
+.emotesrow .fa-heart{
+    color: #C52126;
+}
+
+.emotesrow .fa-thumbs-up{
+    color: #3B5E94;
 }
 
 .emotes:hover .emotesrow {
@@ -254,12 +262,41 @@
 }
 .fa-heart{
 }
+
+.fa-thumbs-up{
+    color: #3B5E94;
+}
+
+.emotestodos{
+    letter-spacing: -10px;
+}
+.sombrathumb{
+    color: white;
+    letter-spacing: -32px;
+    font-size: 35px;
+}
+.emotestodos .fa-thumbs-up{
+
+}
+
+.emotestodos .sorpresa{
+    background-color: white;
+    border-radius: 100%;
+}
+.emotestodos .emocion{
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    z-index: unset;
+
+}
+
 .iconos h1{
     font-size: 12px;
     font-weight: lighter;
     text-align: left;
     margin-top: 15px;
-    margin-left: -15px;
+    margin-left: -10px;
     margin-right: 20px;
 }
 .fa-flag{
