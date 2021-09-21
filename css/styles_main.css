@@ -167,10 +167,9 @@
 
 .contenidoImg{
     image-rendering: auto;
-    text-align: center;
-    height: 53vh;
-    width: 42vw;
     align-content: center;
+    object-fit: cover;
+    width: 100%;
 }
 .flex-container {
     display: flex;
