@@ -36,6 +36,7 @@
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
+    border-radius: 30px 30px 20px 20px;
 }
 #espacioseguro{
     /*width: 100vw;*/
@@ -847,6 +848,17 @@ input[type='checkbox']{
     clear: both;
 }
 
+/* Quita las arros del number text field */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
 /*                   ---------------------------           */
 .profile-pic {
     color: transparent;
@@ -955,7 +967,7 @@ input[type='checkbox']{
     font-size: 17px;
 }
 .editarPerfil{
-    border-radius: 20px;
+
     height: 90vh !important;
     align-content: center;
 }

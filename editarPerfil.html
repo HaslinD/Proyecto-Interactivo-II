@@ -64,7 +64,12 @@
                             <div id="opcionesEdit">
                             Estado de estudio
                             <br>
-                            <input id="estadoEstudio"  type="text" name="estadoEstudio" placeholder="Estudiante de X Año">
+                                <form action="/action_page.php">
+                                    <select id="estadoEstudio" name="estadoEstudio">
+                                        <option value="Activo">Activo</option>
+                                        <option value="Inactivo">Inactivo</option>
+                                    </select>
+                                </form>
                                 <br>
                                 <form action="/action_page.php">
                                   <label for="campus">Campus:</label><br>
@@ -76,58 +81,48 @@
                                 <br>
                             Numero de celular
                             <br>
-                            <input id="numCelular"  type="tel" name="numCelular" pattern="[0-9]{4}-[0-9]{4}" placeholder="98885572"
-                            maxlength="8" minlength="8">
+                            <input id="numCelular"  type="number" name="numCelular"  placeholder="5555-5555"  maxlength="8">
+                                <br>
                                 <br>
                                 
-                                
                                 Softwares
+                               
                                 <div class="row">
                                     <form class="UserTags">
                                         <div class="column">
-                                            <span class="checkcontenedor">
-                                                <input type="checkbox" id="Blender" checked="checked"><span class="checkmark"></span>
-                                                <label for="Blender"> Blender</label><br>
-                                            </span>
-                                            <span class="checkcontenedor">
-                                                <input type="checkbox" id="Unity">
-                                                <label for="Unity"> Unity</label><span class="checkmark"></span><br>
-                                            </span>
-                                            <span class="checkcontenedor">
-                                                <input type="checkbox" id="Photoshop">
-                                                <label for="Photoshop">Adobe Photoshop</label><span class="checkmark"></span><br>
-                                            </span>
+                                            <input type="checkbox" id="Blender" name="Blender" value="Blender">
+                                            <label for="Blender">Blender</label>
+                                            <br>
+                                            <input type="checkbox" id="Unity" name="Unity" value="Unity">
+                                            <label for="Unity">Unity</label>
+                                            <br>
+                                            <input type="checkbox" id="AdobePS" name="AdobePS" value="AdobePS">
+                                            <label for="AdobePS">Adobe Photoshop</label>
                                         </div>
                                         <div class="column">
-                                            <span class="checkcontenedor">
-                                                <input type="checkbox" id="Illustrator">
-                                                <label for="Illustrator">Adobe Illustrator</label><span class="checkmark"></span><br>
-                                            </span>
-                                            <span class="checkcontenedor">
-                                                <input type="checkbox" id="Animate">
-                                                <label for="Animate">Adobe Animate</label><span class="checkmark"></span><br>
-                                            </span>
-                                            <span  class="checkcontenedor">
-                                                <input type="checkbox" id="Maya">
-                                                <label for="Maya"> Maya</label><span class="checkmark"></span><br>
-                                            </span>
+                                            <input type="checkbox" id="AdobeAi" name="AdobeAi" value="AdobeAi">
+                                            <label for="AdobeAi">Adobe Illustrator</label>
+                                            <br>
+                                            <input type="checkbox" id="AdobeAn" name="AdobeAn" value="AdobeAn">
+                                            <label for="AdobeAn">Adobe Animate</label>
+                                            <br>
+                                            <input type="checkbox" id="Maya" name="Maya" value="Maya">
+                                            <label for="Maya">Maya</label>
                                         </div>
                                         <div class="column">
-                                            <span  class="checkcontenedor">
-                                                <input type="checkbox" id="PaintSai">
-                                                <label for="PaintSai"> Paint Tool Sai</label><span class="checkmark"></span><br>
-                                            </span>
-                                            <span  class="checkcontenedor">
-                                                <input type="checkbox" id="CorelPainter">
-                                                <label for="CorelPainter"> Corel Painter</label><span class="checkmark"></span><br>
-                                            </span>
-                                            <span  class="checkcontenedor">
-                                                <input type="checkbox" id="Substance">
-                                                <label for="Substance"> Substance</label><span class="checkmark"></span><br>
-                                            </span>
+                                            <input type="checkbox" id="PaintTS" name="PaintTS" value="PaintTS">
+                                            <label for="PaintTS">Paint Tool Sai</label>
+                                            <br>
+                                            <input type="checkbox" id="CorelPainter" name="CorelPainter" value="CorelPainter">
+                                            <label for="CorelPainter">Corel Painter</label>
+                                            <br>
+                                            <input type="checkbox" id="Substance" name="Substance" value="Substance">
+                                            <label for="Substance">Substance</label>
                                         </div>
                                     </form>
                                 </div>
+                                <br>
+                                <br>
 
                                  <div class="flex-container">
                                     <button onclick="location.href='perfil.html'" class="BotonCancelar" type="button">Cancelar</button>
