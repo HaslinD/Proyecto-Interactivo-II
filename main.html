@@ -42,30 +42,52 @@
 
         <!--Pop UP Publicacion-->
 
+       
         <div id="myModal" class="modal">
             <div id="ventanaPublicar">
                 <div class="content">
                     <div class="container">
-                        <div class="borde">
+
+                         <!--Titulo de Nueva Publicación-->
+                        <div id="tituloNuevaPub" class="borde">
                             <h1>Nueva Publicación</h1>
+
+                            <!--X de cierre-->
+                            <span class="xCerrar"><i class="fas fa-times"></i></span>
                         </div>
+
                         <div class="agregarArchivo borde">
-                            
-                                
-                                    <img class="imgPublicar" src="images/ejemplo1.png" alt="placeholder">
-                                
-                                
-                                    <img class="imgPublicar" src="images/ejemplo2.png" alt="placeholder">
-                               
+
+                            <!--Seleccion de Archivos a Publicar-->
+                             <div>
+                                <p>Seleccione un archivo de foto, video o pdf para publicar.</p>
+                            </div>
+                            <div class="seleccionados">
+                                <img class="imgPublicar" src="images/ejemplo1.png" alt="placeholder">
+                                <img class="imgPublicar" src="images/ejemplo2.png" alt="placeholder">
+
+                                <!--BOTON de SELECCIONAR Archivos-->
                                 <button class="seleccionarArchivo"> 
-                                    <i class="fas fa-plus-circle"></i>
+                                        <i class="fas fa-plus-circle"></i>
                                 </button>
-                           
+                            </div>
                         </div>
+
                         <div class="borde descripcionInput">
-                            <input type="text" name="Descripción" placeholder="Descripción..."> <p><i class="fas fa-laugh"></i></p>
+
+                            <!--Input de DESCRIPCION del Post-->
+                            <input type="text" name="Descripción" placeholder="Descripción...">
+
+                            <!--EMOTES-->
+                            <div class="emotes">
+                                <span class="smile">&#128512;</span>
+                                <span class="emotesrow"><i class="fas fa-heart"></i> <i class="fas fa-thumbs-up"></i>&#128562;&#128518;</span>
+                            </div>
                         </div>
+
                         <div class="publicarCancelar">
+
+                            <!--Botones para PUBLICAR o CANCELAR el post-->
                             <input href="#" type="submit" value="Cancelar" class="btn-red cerrar">
                             <input href="#" type="submit" value="Publicar" class="btn-blue">
                         </div>

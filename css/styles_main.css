@@ -486,11 +486,14 @@ h2{
 }
 
 .agregarArchivo{
-  display: flex;
-  justify-content: center;
   padding: 30px;
   height: 300px;
-    max-height: 300px;
+  max-height: 300px;
+}
+
+.seleccionados{
+     display: flex;
+  justify-content: space-between;
 }
 
 .agregarArchivo p{
@@ -503,6 +506,9 @@ h2{
 .seleccionarArchivo{
   display: flex;
   justify-content: center;
+    height: 120px;
+    background-color: #c7c7c7;
+    border-color: #717171;
 }
 
 .publicarCancelar{
@@ -540,7 +546,7 @@ h2{
 }
 
 .fa-laugh{
-    padding: 20px 0 0 0;
+   
 }
 
 /* PRIMER INTENTO
@@ -563,7 +569,6 @@ h2{
 
 .imgPublicar{
     height: 120px;
-    margin-left: 30px;
 }
 
 .fa-plus-circle{
@@ -577,12 +582,39 @@ h2{
 
 }
 
-.seleccionarArchivo{
-    margin-left: 30px;
-    height: 120px;
-    background-color: #c7c7c7;
-    border-color: #717171;
+#tituloNuevaPub{
+        display: flex;
+    justify-content: space-between;
+    color: #707171;
+    padding-top: 5px;
 }
+
+.xCerrar{
+color: #707171;
+    font-size: 24px;
+}
+
+.xCerrar:hover{
+    cursor: pointer;
+    color: #4e4e4e;
+}
+
+#myModal .smile{
+     font-size: 25px;
+}
+
+#myModal .emotes{
+    padding-top: 10px;
+}
+
+#myModal .emotes:hover{
+    cursor: pointers;
+}
+
+input[type=text], select {
+    border: 0 !important;
+}
+
  /*---------------FIN STYLE POP UP NUEVA PUBLICACION--------------*/
 
  /*----------------Perfil---------------------------*/
