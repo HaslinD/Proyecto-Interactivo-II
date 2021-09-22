@@ -96,12 +96,62 @@
              </div>
         </div>
 
-
         <div id="columnacentral">
             <div id="espacioseguro">
                 <a class="todos">Todos</a> <a class="siguiendo">Siguiendo</a>
             </div>
 
+            <!--Pop Up Publiacion Ver-->
+            <div class="contenedor-post-fondo contenedor-desactivado" onclick="cerrarModal(event)">
+                <div class="contenedor-post" onclick="prevenirModal(event)">
+
+                    <div class="image-post">
+                        <div class="flex-container cont1">
+                            <img id="imagenPP1" src="images/baba.jpg" width="48" height="48">
+                            <h3 class="texto1">Christian Henríquez</h3>
+                            <button class="button boton boton1 derecha">SEGUIR</button>
+                        </div>
+                        <div class="imagen-post">
+                            <img id="imagenP" src="images/Haslin.png" width="1002" height="564">
+                        </div>
+                        <div class="texto-post">
+                            <h5 class="texto2">Imagen de ejemplo.</h5>
+                        </div>
+                        <div class="flex-container iconos-post">
+                            <i class="fas fa-heart icono"></i>
+                            <h6 class="texto-icono">5k</h6>
+                            <i class="fas fa-comment-dots icono"></i>
+                            <h6 class="texto-icono">522</h6>
+                            <i class="fas fa-bookmark icono derecha"></i>
+                        </div>
+                    </div>
+                    <div class="comments-post">
+                        <div class="lista">
+                            <div class="comment">
+                                <div class="comment-image">
+                                    <img class="imagenP2" src="images/baba.jpg" width="48" height="48">
+                                </div>
+                                <div class="comment-text">
+                                    <h5>Christian Henriquez</h5>
+                                    <h6>comentario de ejemplo.</h6>
+                                    <div class="icons-comment flex-container">
+                                        <i class="fas fa-heart icono-comment"></i>
+                                        <i class="fas fa-comment-dots icono-comment"></i>
+                                    </div>
+                                </div>
+                                <div class="comment-dots derecha">
+                                    <i class="fas fa-ellipsis-h icono"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lista-new-comment">
+                            <h5 class="texto-comentario">Deja un comentario...</h5>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
                 <span class="tabMenu">
                     <span class="todosTab">
                         
@@ -113,59 +163,6 @@
                                 
                                 <div class="contenido" onclick="abrirModal(event)">
                                     <img src="images/Haslin.png" class="contenidoImg">
-
-
-                                    <!--Pop Up Publiacion Ver-->
-                                    <div class="contenedor-post-fondo contenedor-desactivado" onclick="cerrarModal(event)">
-                                        <div class="contenedor-post" onclick="prevenirModal(event)">
-                                        
-                                            <div class="image-post">
-                                                <div class="flex-container cont1">
-                                                    <img id="imagenPP1" src="images/baba.jpg" width="48" height="48">
-                                                    <h3 class="texto1">Christian Henríquez</h3>
-                                                    <button class="button boton boton1 derecha">SEGUIR</button>
-                                                </div>
-                                                <div class="imagen-post">
-                                                    <img id="imagenP" src="images/Haslin.png" width="1002" height="564">
-                                                </div>
-                                                <div class="texto-post">
-                                                    <h5 class="texto2">Imagen de ejemplo.</h5>
-                                                </div>
-                                                <div class="flex-container iconos-post">
-                                                    <i class="fas fa-heart icono"></i>
-                                                    <h6 class="texto-icono">5k</h6>
-                                                    <i class="fas fa-comment-dots icono"></i>
-                                                    <h6 class="texto-icono">522</h6>
-                                                    <i class="fas fa-bookmark icono derecha"></i>
-                                                </div>
-                                            </div>
-                                            <div class="comments-post">
-                                                <div class="lista">
-                                                    <div class="comment">
-                                                        <div class="comment-image">
-                                                            <img class="imagenP2" src="images/baba.jpg" width="48" height="48">
-                                                        </div>
-                                                        <div class="comment-text">
-                                                            <h5>Christian Henriquez</h5>
-                                                            <h6>comentario de ejemplo.</h6>
-                                                            <div class="icons-comment flex-container">
-                                                                <i class="fas fa-heart icono-comment"></i>
-                                                                <i class="fas fa-comment-dots icono-comment"></i>
-                                                            </div>
-                                                        </div>
-                                                        <div class="comment-dots derecha">
-                                                            <i class="fas fa-ellipsis-h icono"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="lista-new-comment">
-                                                    <h5 class="texto-comentario">Deja un comentario...</h5>
-                                                </div>
-                                            </div>
-                                        
-                                        
-                                        </div>
-                                    </div>
                                 </div>
 
                                 <p>Contenido de comentario del publicador.</p>
@@ -186,11 +183,6 @@
                                 </div>
                             </div>
                         </div>
-
-                    </span>
-
-                    <span class="siguiendoTab">
-                        
                         <div class="publicacion">
                             <div class="cont-publicacion">
                                 <div class="infousuario">
@@ -224,14 +216,10 @@
                                 </div>
                             </div>
                         </div>
-
                     </span>
-
+                    <span class="siguiendoTab">
+                    </span>
                 </span>
-
-            
-            
-
         </div>
         <div id="columnaderecha">
             <div id="menuderecha">
