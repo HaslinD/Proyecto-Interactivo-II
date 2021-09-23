@@ -36,18 +36,19 @@
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
-    border-radius: 30px 30px 20px 20px;
+    /*border-radius: 30px 30px 20px 20px;*/
 }
 #espacioseguro{
     /*width: 100vw;*/
-    height: 6vh;
+    height: 7vh;
     background-color: #DFDFDF;
     font-family: Segoe UI;
     font-size: 20px;
     color: #707070;
-    text-align: right;
     padding: 10px 93px 0px 10px;
+    justify-content: right;
 }
+
 .publicacion{
     /*width: 60vw;*/
     min-height: 40vh;
@@ -98,11 +99,11 @@
     color: white;
     background-color: #3B5F93;
     border-radius: 8px;
-    padding: 10px 15px;
+    padding: 6px 13px;
     font-weight: bold;
     font-size: 16px;
-    line-height: 6.8vh;
-    box-shadow: 0 3.5px 9px rgb(0 0 0 / 0.6);
+    box-shadow: 0 3.5px 10px rgb(0 0 0 / 0.5);
+    margin-bottom: 20px;
 }
 .botonizq:hover{
     background-color: #4f78b2;
@@ -126,9 +127,10 @@
     color: white;
     font-size: 16px;
     box-shadow: 0 3.5px 9px rgb(0 0 0 / 0.6);
-    float: right;
-    line-height: 28px;
+    /*float: right;
+    line-height: 28px;*/
     margin-top: 1.3vh;
+    font-weight: bold;
 }
 .logoMain{
     height: 50px;
@@ -160,6 +162,7 @@
 #menudersugerencias{
     font-family: Segoe UI;
     font-size: 18px;
+    margin-left: 10px;
 }
 
 .contenido{
@@ -232,6 +235,7 @@
     padding-left: 60px;
     margin-top: 4px;
 }
+
 .publicacion p{
     font-size: 19px;
     font-family: Segoe UI;
@@ -242,11 +246,12 @@
     border-radius: 18px;
     border-style: solid;
     border-width: thin;
-    padding: 5px 10px 5px 35px;
+    padding: 5px 8px 5px 33px;
     color: #707070;
     font-weight: normal;
     font-size: 16px;
 }
+
 .infousuario{
     padding: 0px 10px 10px 25px;
 }
@@ -306,10 +311,20 @@
     font-size: 25px;
     color: #9A9A9A;
 }
+
+.mdstags{
+    font-weight: bold;
+}
+
 .mdstags, .mdspersonas{
     text-align: left;
     margin-left: 20px;
-    line-height: 5.5vh;
+    line-height: 4vh;
+}
+.mdspersonas .personas{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 2vh;
 }
 .fa-sign-out-alt{
     color: #707070;
@@ -429,7 +444,6 @@
 
 .todos{
     font-weight: bold;
-    margin-right: 30px;
 }
 .siguiendo{
     font-weight: normal;
