@@ -458,7 +458,7 @@
 }
 
 
-.content{
+#ventanaPublicar .content{
   background-color: #ececec;
   width: 900px;
   border-radius: 20px;
@@ -469,6 +469,10 @@
   margin-left: 80px;
   margin-top: 220px;
   */
+}
+
+#ventanaPublicar .container{
+    width: 900px;
 }
 
 .borde{
