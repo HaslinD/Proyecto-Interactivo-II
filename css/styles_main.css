@@ -1331,3 +1331,65 @@ select{
 .derecha {
     margin-left: auto !important;
 }
+
+/*--------SEGUIDORES--------*/
+.seguidores-contenedor{
+    overflow: hidden;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: #DFDFDF;
+    border: thin solid #9A9A9A;
+    margin-top: 30px;
+}
+.seguir{
+    border-radius: 8px;
+    background-color: #3B5F93;
+    border-style: none;
+    color: #FFFFFF;
+    width: 106px;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 3px 15px #3B3B3B;
+    box-shadow: 0px 3px 15px #3B3B3B;
+}
+button .remover {display: none;}
+button:hover .seguir-t {display: none;}
+button:hover .remover {display: inline;}
+	
+.perfiles-contenedor{
+    padding-top: 14px;
+}
+.perfiles{
+    text-align: center;
+    padding-top: 9px;
+}
+.perfiles img{
+    width: 30px;
+    height: auto;
+    border-radius: 20px;
+}
+.perfiles p{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 178px;
+}
+.tab{
+    width: 50%;
+    display: inline-block;
+    background-color: #FFFFFF;
+    text-align: center;
+    height: 40px;
+    padding-bottom: auto;
+    padding-top: 7px;
+    color: #3B5F93;
+}
+.tab:active{
+    background-color: #3B5F93;
+    color: #FFFFFF;	
+}
+
+
+.tabContent {
+    display:none;
+}
